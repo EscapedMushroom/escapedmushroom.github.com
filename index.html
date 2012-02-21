@@ -1,0 +1,179 @@
+<html>
+<head>
+    <title>EscapedMushroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+
+    <script type="text/javascript">
+
+        function d(R, x, y, color, pixel) {
+            R.rect(x, y, pixel, pixel).attr({
+                fill: color,
+                'stroke-width': 0
+            })
+        }
+        $(document).ready(function () {
+            var R = Raphael('logo', 0, 0)
+                    , pixel = 10
+                    , start = 10
+                    , b = "#000000"
+                    , r = "#D51E11"
+                    , y = "#EC8F2A"
+                    , w = "#ffffff"
+                    , array =
+                    [
+                        [w, w, w, w, w, b, b, b, b, b, b, w, w, w, w, w],
+                        [w, w, w, b, b, b, r, y, y, r, b, b, b, w, w, w],
+                        [w, w, b, b, r, r, r, y, y, r, r, r, b, b, w, w],
+                        [w, b, b, y, r, r, y, y, y, y, r, r, y, b, b, w],
+                        [w, b, r, y, y, y, y, y, y, y, y, y, y, r, b, w],
+                        [b, b, r, r, y, y, r, r, r, r, y, y, r, r, b, b],
+                        [b, r, r, r, y, r, r, r, r, r, r, y, r, r, r, b],
+                        [b, r, r, r, y, r, r, r, r, r, r, y, r, r, r, b],
+                        [b, r, r, y, y, r, r, r, r, r, r, y, y, r, r, b],
+                        [b, y, y, y, y, y, r, r, r, r, y, y, y, y, y, b],
+                        [b, y, y, b, b, b, b, b, b, b, b, b, b, y, y, b],
+                        [b, b, b, b, w, w, b, w, w, b, w, w, b, b, b, b],
+                        [w, b, b, w, w, w, b, w, w, b, w, w, w, b, b, w],
+                        [w, w, b, w, w, w, w, w, w, w, w, w, w, b, w, w],
+                        [w, w, b, b, w, w, w, w, w, w, w, w, b, b, w, w],
+                        [w, w, w, b, b, b, b, b, b, b, b, b, b, w, w, w]
+                    ];
+
+            for (var i = 0; i < array.length; i++)
+                for (var j = 0; j < array[i].length; j++)
+                    d(R, start + pixel * j, start + pixel * i, array[i][j],pixel);
+
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="header">
+    <div id="mushroom">
+        <span class="slash">\</span>
+
+        <div id="logo"></div>
+        <span class="title">Escaped Mushroom</span>
+    </div>
+</div>
+<div class="clear"></div>
+
+
+<div class="container">
+
+    <div class="clear"></div>
+    <div class="row">
+        <div class="span8">
+
+            <h1 class="page-header">
+                MattiaLarentis
+            </h1>
+
+            <div class="clear"></div>
+            <img src="http://www.gravatar.com/avatar/8609ef19a20a567d201bcb4259808ab9"
+                 alt="nostalgiaz"/>
+
+            <p>
+                Obtained an Informatics diploma at ITI Marconi in Rovereto, I'm
+                currently enrolled at the University of Trento in the Computer
+                Science department. I am a co-founder of the group <a
+                    href="http://www.bluemead.org">Bluemead</a>, and follow
+                many free software projects like, for instance, <a
+                    href="http://www.zel10.com">zel10</a>, of which I am the
+                Project Manager. In &lt;ahref I can mix my Computer Science
+                knowledge with some more humanistic-oriented experiences for
+                web-development, mainly from the Human Interaction point of
+                view. [mail: mattia [at] larentis [dot] eu]
+            </p>
+
+            <div class="link">
+                <a href="mailto:mattia@larentis.eu"
+                   class="label warning">mail</a>
+                <a href="https://twitter.com/#!/SpiritualGuru"
+                   class="label twitter">twitter</a>
+                <a href="http://www.linkedin.com/in/mattialarentis"
+                   class="label linkedin">linkedIn</a>
+                <a href="http://www.larentis.eu" class="label success">my
+                    site</a>
+
+            </div>
+        </div>
+        <div class="span8">
+
+            <h1 class="page-header">
+                AlbertoBuratti
+            </h1>
+
+            <div class="clear"></div>
+            <img src="http://www.gravatar.com/avatar/27d14974889d6ab226bd489a3ba1a300"
+                 alt="nostalgiaz"/>
+
+            <p>
+                Graduated in Information Technology, now I'm studying at
+                University of Trento. In the meanwhile I spend my time
+                developing free software in the BlueMead team (and by my own of
+                course). I also manage various servers with web-related
+                services, databases and domains. I am a member of LinuxTrent
+                association, and also a volunteer fireman of my town dept.
+            </p>
+        </div>
+        <div class="link">
+            <a href="mailto:alberthohenstaufen@gmail.com"
+               class="label warning">mail</a>
+            <a href="https://twitter.com/#!/ahohenstaufen"
+               class="label twitter">twitter</a>
+            <a href="http://www.linkedin.com/pub/alberto-buratti/24/614/b21"
+               class="label linkedin">linkedIn</a>
+            <a href="http://www.ahohenstaufen.net" class="label success">my
+                site</a>
+
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="span8">
+            <h1 class="page-header">
+                OurSites
+            </h1>
+            <ul>
+                <li>
+                    <a href="http://www.bluemead.org"><span
+                            class="label notice">Bluemead</span></a>
+                    The site of our dev team. Follow us!
+                </li>
+                <li>
+                    <a href="http://www.zel10.com"><span
+                            class="label notice">zel10</span></a>
+                    A platform which enables users to execute surveys in a easy
+                    way and examine results of such surveys in realtime.
+                </li>
+                <li>
+                    <a href="#"><span
+                            class="label notice">Ecb</span></a>
+                    "Celebrate the excellence"
+                </li>
+            </ul>
+        </div>
+        <div class="span8">
+            <h1 class="page-header">
+                OurProjects
+            </h1>
+            <ul>
+                <li>
+                    <a href="https://github.com/hohenstaufen/tweetyourRSS"><span
+                            class="label warning">tweetyourRSS</span></a>
+                    Small python script that lets you tweet any rss feed ;)
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

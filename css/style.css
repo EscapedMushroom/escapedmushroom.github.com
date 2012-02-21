@@ -1,0 +1,66 @@
+#header {
+    height: 110px;
+}
+div.clear {
+    clear: both;
+}
+#header {
+    width: 960px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    /*margin-top: 50px;*/
+    margin-bottom: 20px;
+    height: 180px;
+}
+svg {
+    z-index: 1;
+}
+.slash {
+    font-size: 200px;
+    display: inline-block;
+    float: left;
+    margin-top: 84px;
+    margin-left: 264px;
+    color: black;
+}
+.title {
+    float: left;
+    display: inline-block;
+    margin-top: 157px;
+    margin-left: -10px;
+    z-index: 2;
+}
+#logo {
+    display: inline-block;
+    float: left;
+    height: 200px;
+    width: 180px;
+    z-index: 1;
+}
+.link a {
+    float: right;
+    margin-left: 5px;
+}
+li {
+    line-height: 25px;
+}
+.container {
+    /*width: 820px;*/
+    margin: 0 auto;
+    /*border: 1px black solid;*/
+
+}
+.row img {
+   border-radius: 5px;
+   float: left;
+   margin-right: 5px;
+}
+p {
+    text-align: justify;
+}
+.label.linkedin {
+    background-color: #3177B0;
+}
+.label.twitter {
+    background-color: #5693D9;
+}
